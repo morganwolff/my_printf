@@ -12,8 +12,7 @@ void my_printf(char *src, ...)
     /*"qo,x,X,p,b,u"*/
     va_list list;
     int i = 0, ind;
-    char *flags = malloc(sizeof(char) * 5);
-    flags = "dicsS";
+    char flags[5] = "dicsS";
     char flag;
     void (*func[])(va_list list) = {my_nbr, my_nbr, my_char, my_str, my_upcase};
 
